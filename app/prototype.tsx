@@ -20,14 +20,7 @@ export default function TrainingPlan() {
     STRENGTH_PROGRAMS[phase.strengthKey as keyof typeof STRENGTH_PROGRAMS];
 
   return (
-    <div
-      style={{
-        minHeight: "100vh",
-        background: "#0d0d0d",
-        color: "#e8e0d0",
-        fontFamily: "'Georgia', 'Times New Roman', serif",
-      }}
-    >
+    <div className="min-h-screen bg-bg text-text-warm font-display">
       <PlanHeader />
       <PhaseNavTabs
         activePhase={activePhase}
@@ -37,7 +30,7 @@ export default function TrainingPlan() {
           setShowStrength(false);
         }}
       />
-      <div style={{ maxWidth: 640, margin: "0 auto", padding: "20px 16px" }}>
+      <div className="max-w-[640px] mx-auto px-4 py-5">
         <ViewToggle
           showStrength={showStrength}
           onToggle={setShowStrength}
