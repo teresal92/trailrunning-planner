@@ -35,11 +35,4 @@ The two top-level view branches are `ScheduleView` and `StrengthView`, toggled b
 
 ### Styling
 
-Components currently use **inline styles** with a dark-theme color palette. The intention is to migrate to a reusable design token system — do not add new inline style values; use or extend the token system when it exists.
-
-Key hardcoded values to be aware of until the token migration is complete:
-
-- Background: `#0d0d0d`, surface: `#111`, border: `#1e1e1e`
-- Text primary: `#e8e0d0`, muted: `#888`, subtle: `#555`
-- Accent colors per phase/day type: see `app/constants.ts` and each `Phase.color`
-- Font families: Georgia (body), monospace (data/labels)
+Some components still use **inline styles** left over from before the design token migration. The intention is to migrate these to the token system — do not add new inline style values; use or extend the tokens instead. Design tokens (surfaces, text, accent, training-intensity semantics, HR zones, fonts) are defined in `app/globals.css`.

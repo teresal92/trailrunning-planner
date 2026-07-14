@@ -4,7 +4,8 @@
  * Design tokens — Linear-inspired. Light values are the @theme
  * defaults; dark overrides the same custom properties under
  * prefers-color-scheme (Tailwind v4's default dark mode strategy).
- * Source: design-tokens/tokens.css
+ * Colors are OKLCH for perceptually-uniform lightness steps between
+ * light/dark pairs. Source: design-tokens/tokens.css
  */
 
 @theme inline {
@@ -13,73 +14,60 @@
 }
 
 @theme {
-  --text-xs: 11px;
-  --text-sm: 12.5px;
-  --text-base: 14px;
-  --text-md: 15px;
-  --text-lg: 17px;
-  --text-xl: 22px;
-  --text-2xl: 26px;
-
-  --radius-sm: 6px;
-  --radius-md: 8px;
-  --radius-lg: 12px;
-  --radius-xl: 16px;
-
   /* surfaces */
-  --color-bg: #f6f6f7;
-  --color-surface: #ffffff;
-  --color-surface-alt: #f6f6f7;
-  --color-surface-sunken: #fafafb;
-  --color-border: #e7e7ea;
-  --color-border-subtle: #eeeef0;
+  --color-bg: oklch(97.3% 0.0013 286.4);
+  --color-surface: oklch(100% 0 0);
+  --color-surface-alt: oklch(97.3% 0.0013 286.4);
+  --color-surface-sunken: oklch(98.5% 0.0013 286.4);
+  --color-border: oklch(92.9% 0.004 286.3);
+  --color-border-subtle: oklch(95% 0.0027 286.3);
 
   /* text */
-  --color-text-primary: #17171a;
-  --color-text-secondary: #6b6f76;
-  --color-text-tertiary: #9a9ca3;
+  --color-text-primary: oklch(20.6% 0.0059 285.9);
+  --color-text-secondary: oklch(54.1% 0.0119 261.8);
+  --color-text-tertiary: oklch(69.3% 0.0104 273.3);
 
   /* accent (violet, Linear-derived) */
-  --color-accent: #5e6ad2;
-  --color-accent-soft: #eceeff;
-  --color-accent-soft-text: #3d43a8;
+  --color-accent: oklch(56.7% 0.1585 275.2);
+  --color-accent-soft: oklch(95.3% 0.0229 280.6);
+  --color-accent-soft-text: oklch(44% 0.1595 275.1);
 
   /* training-intensity semantics (identical across themes) */
-  --color-easy: #4cb782;
-  --color-tempo: #f2994a;
-  --color-threshold: #eb5757;
-  --color-strength: #5e6ad2;
-  --color-rest: #d4d5d9;
+  --color-easy: oklch(70.3% 0.1267 158.9);
+  --color-tempo: oklch(76% 0.1417 59.5);
+  --color-threshold: oklch(65.3% 0.1835 23.7);
+  --color-strength: oklch(56.7% 0.1585 275.2);
+  --color-rest: oklch(87.3% 0.0056 275);
 
   /* HR zones (Z1-Z5) */
-  --color-zone-1: #4cb782;
-  --color-zone-2: #5e6ad2;
-  --color-zone-3: #f2994a;
-  --color-zone-4: #eb5757;
-  --color-zone-5: #b23a6b;
+  --color-zone-1: oklch(70.3% 0.1267 158.9);
+  --color-zone-2: oklch(56.7% 0.1585 275.2);
+  --color-zone-3: oklch(76% 0.1417 59.5);
+  --color-zone-4: oklch(65.3% 0.1835 23.7);
+  --color-zone-5: oklch(53.5% 0.161 359);
 
-  --shadow-card: 0 30px 60px -20px rgba(0, 0, 0, 0.25);
+  --shadow-card: 0 30px 60px -20px oklch(0% 0 0 / 0.25);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-bg: #0d0d0f;
-    --color-surface: #131316;
-    --color-surface-alt: #17171a;
-    --color-surface-sunken: #1a1a1d;
-    --color-border: #212124;
-    --color-border-subtle: #1d1d20;
+    --color-bg: oklch(16% 0.0042 285.9);
+    --color-surface: oklch(18.8% 0.006 285.8);
+    --color-surface-alt: oklch(20.6% 0.0059 285.9);
+    --color-surface-sunken: oklch(21.9% 0.0058 285.9);
+    --color-border: oklch(24.9% 0.0056 286);
+    --color-border-subtle: oklch(23.2% 0.0057 285.9);
 
-    --color-text-primary: #f2f2f3;
-    --color-text-secondary: #9a9ca3;
-    --color-text-tertiary: #75777f;
+    --color-text-primary: oklch(96.1% 0.0013 286.4);
+    --color-text-secondary: oklch(69.3% 0.0104 273.3);
+    --color-text-tertiary: oklch(57% 0.0125 274.8);
 
-    --color-accent-soft: #2a2a54;
-    --color-accent-soft-text: #a6acf0;
+    --color-accent-soft: oklch(30.8% 0.0741 281.1);
+    --color-accent-soft-text: oklch(76.5% 0.0975 279.9);
 
-    --color-rest: #3f4046;
+    --color-rest: oklch(37.3% 0.0103 278.3);
 
-    --shadow-card: 0 30px 60px -20px rgba(0, 0, 0, 0.6);
+    --shadow-card: 0 30px 60px -20px oklch(0% 0 0 / 0.6);
   }
 }
 
