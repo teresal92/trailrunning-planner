@@ -20,7 +20,7 @@ export default function TrainingPlan() {
     STRENGTH_PROGRAMS[phase.strengthKey as keyof typeof STRENGTH_PROGRAMS];
 
   return (
-    <div className="min-h-screen bg-bg text-text-warm font-display">
+    <div className="min-h-screen bg-bg text-text-primary font-sans">
       <PlanHeader />
       <PhaseNavTabs
         activePhase={activePhase}
