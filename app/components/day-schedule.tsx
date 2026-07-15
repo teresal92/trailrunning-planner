@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import DayCard from "./DayCard";
+import DayCard from "./day-card";
 import type { Day } from "../types";
 
 interface DayScheduleProps {

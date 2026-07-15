@@ -1,5 +1,5 @@
-import ExerciseCard from "./ExerciseCard";
-import NutritionNote from "./NutritionNote";
+import ExerciseCard from "./exercise-card";
+import NutritionNote from "./nutrition-note";
 import type { StrengthProgram } from "../types";
 
 interface StrengthViewProps {

@@ -1,8 +1,8 @@
-import PhaseOverviewCard from "./PhaseOverviewCard";
-import WeekSelector from "./WeekSelector";
-import WeekStatsHeader from "./WeekStatsHeader";
-import DaySchedule from "./DaySchedule";
-import HeartRateZones from "./HeartRateZones";
+import PhaseOverviewCard from "./phase-overview-card";
+import WeekSelector from "./week-selector";
+import WeekStatsHeader from "./week-stats-header";
+import DaySchedule from "./day-schedule";
+import HeartRateZones from "./heart-rate-zones";
 import type { Phase, WeekData } from "../types";
 
 interface ScheduleViewProps {
