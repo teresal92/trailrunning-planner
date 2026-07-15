@@ -2,12 +2,11 @@
 
 import { useState } from "react";
 import { PHASES, STRENGTH_PROGRAMS } from "./data";
-import PlanHeader from "./components/PlanHeader";
-import PhaseNavTabs from "./components/PhaseNavTabs";
-import ViewToggle from "./components/ViewToggle";
-import ScheduleView from "./components/ScheduleView";
-import StrengthView from "./components/StrengthView";
-import PlanFooter from "./components/PlanFooter";
+import PlanHeader from "./components/plan-header";
+import PhaseNavTabs from "./components/phase-nav-tabs";
+import ViewToggle from "./components/view-toggle";
+import ScheduleView from "./components/schedule-view";
+import StrengthView from "./components/strength-view";
 
 export default function TrainingPlan() {
   const [activePhase, setActivePhase] = useState(0);
@@ -31,7 +30,7 @@ export default function TrainingPlan() {
           setShowStrength(false);
         }}
       />
-      <div style={{ maxWidth: 640, margin: "0 auto", padding: "20px 16px" }}>
+      <div>
         <ViewToggle
           showStrength={showStrength}
           onToggle={setShowStrength}
@@ -50,7 +49,6 @@ export default function TrainingPlan() {
             phaseColor={phase.color}
           />
         )}
-        <PlanFooter />
       </div>
     </div>
   );

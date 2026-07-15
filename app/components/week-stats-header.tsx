@@ -8,7 +8,7 @@ export default function WeekStatsHeader({ week }: WeekStatsHeaderProps) {
   return (
     <div>
       <div>
-        <div style={{ fontSize: 15, fontWeight: 600 }}>Week {week.week}</div>
+        <div>Week {week.week}</div>
         <div>{week.dates}</div>
       </div>
       <div>

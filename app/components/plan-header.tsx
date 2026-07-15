@@ -2,7 +2,7 @@ export default function PlanHeader() {
   return (
     <div>
       <div>
-        <div>Teresa Lew · F33</div>
+        <div>Teresa Lew</div>
         <h1>Mammoth Trailfest 26K</h1>
         <div>Training Plan · May – September 2026</div>
         <div>

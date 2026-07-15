@@ -1,4 +1,4 @@
-import TrainingPlan from "./prototype";
+import TrainingPlan from "./plan-prototype";
 
 export default function Home() {
   return (
