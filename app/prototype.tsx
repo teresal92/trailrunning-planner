@@ -15,7 +15,7 @@ export default function TrainingPlan() {
   const [user, setUser] = useState(DEFAULT_USER);
   const [activePhase, setActivePhase] = useState(0);
   const [activeWeek, setActiveWeek] = useState(0);
-  const [selectedDay, setSelectedDay] = useState(null);
+  const [selectedDay, setSelectedDay] = useState<number | null>(null);
   const [showStrength, setShowStrength] = useState(false);
 
   const phase = PHASES[activePhase];

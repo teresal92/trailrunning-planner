@@ -1,6 +1,8 @@
 // Training Data and Program
 
-export const STRENGTH_PROGRAMS = {
+import type { Phase, StrengthProgram } from "./types";
+
+export const STRENGTH_PROGRAMS: Record<string, StrengthProgram> = {
   base: {
     name: "Base Strength",
     goal: "Rebuild movement patterns, activate glutes, establish baseline.",
@@ -202,7 +204,7 @@ export const STRENGTH_PROGRAMS = {
   },
 };
 
-export const PHASES = [
+export const PHASES: Phase[] = [
   {
     id: "base",
     name: "Base Building",

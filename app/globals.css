@@ -1,26 +1,78 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+/**
+ * Design tokens — Linear-inspired. Light values are the @theme
+ * defaults; dark overrides the same custom properties under
+ * prefers-color-scheme (Tailwind v4's default dark mode strategy).
+ * Colors are OKLCH for perceptually-uniform lightness steps between
+ * light/dark pairs. Source: design-tokens/tokens.css
+ */
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-jetbrains-mono);
+}
+
+@theme {
+  /* surfaces */
+  --color-bg: oklch(97.3% 0.0013 286.4);
+  --color-surface: oklch(100% 0 0);
+  --color-surface-alt: oklch(97.3% 0.0013 286.4);
+  --color-surface-sunken: oklch(98.5% 0.0013 286.4);
+  --color-border: oklch(92.9% 0.004 286.3);
+  --color-border-subtle: oklch(95% 0.0027 286.3);
+
+  /* text */
+  --color-text-primary: oklch(20.6% 0.0059 285.9);
+  --color-text-secondary: oklch(54.1% 0.0119 261.8);
+  --color-text-tertiary: oklch(69.3% 0.0104 273.3);
+
+  /* accent (violet, Linear-derived) */
+  --color-accent: oklch(56.7% 0.1585 275.2);
+  --color-accent-soft: oklch(95.3% 0.0229 280.6);
+  --color-accent-soft-text: oklch(44% 0.1595 275.1);
+
+  /* training-intensity semantics (identical across themes) */
+  --color-easy: oklch(70.3% 0.1267 158.9);
+  --color-tempo: oklch(76% 0.1417 59.5);
+  --color-threshold: oklch(65.3% 0.1835 23.7);
+  --color-strength: oklch(56.7% 0.1585 275.2);
+  --color-rest: oklch(87.3% 0.0056 275);
+
+  /* HR zones (Z1-Z5) */
+  --color-zone-1: oklch(70.3% 0.1267 158.9);
+  --color-zone-2: oklch(56.7% 0.1585 275.2);
+  --color-zone-3: oklch(76% 0.1417 59.5);
+  --color-zone-4: oklch(65.3% 0.1835 23.7);
+  --color-zone-5: oklch(53.5% 0.161 359);
+
+  --shadow-card: 0 30px 60px -20px oklch(0% 0 0 / 0.25);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --color-bg: oklch(16% 0.0042 285.9);
+    --color-surface: oklch(18.8% 0.006 285.8);
+    --color-surface-alt: oklch(20.6% 0.0059 285.9);
+    --color-surface-sunken: oklch(21.9% 0.0058 285.9);
+    --color-border: oklch(24.9% 0.0056 286);
+    --color-border-subtle: oklch(23.2% 0.0057 285.9);
+
+    --color-text-primary: oklch(96.1% 0.0013 286.4);
+    --color-text-secondary: oklch(69.3% 0.0104 273.3);
+    --color-text-tertiary: oklch(57% 0.0125 274.8);
+
+    --color-accent-soft: oklch(30.8% 0.0741 281.1);
+    --color-accent-soft-text: oklch(76.5% 0.0975 279.9);
+
+    --color-rest: oklch(37.3% 0.0103 278.3);
+
+    --shadow-card: 0 30px 60px -20px oklch(0% 0 0 / 0.6);
   }
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-bg);
+  color: var(--color-text-primary);
+  font-family: var(--font-sans);
 }
