@@ -6,9 +6,13 @@ interface ViewToggleProps {
   phaseColor: string;
 }
 
-export default function ViewToggle({ showStrength, onToggle, phaseColor }: ViewToggleProps) {
+export default function ViewToggle({
+  showStrength,
+  onToggle,
+  phaseColor,
+}: ViewToggleProps) {
   return (
-    <div style={{ display: "flex", gap: 8, marginBottom: 20 }}>
+    <div>
       {(["Schedule", "Strength Program"] as const).map((label, i) => {
         const isActive = showStrength === (i === 1);
         return (

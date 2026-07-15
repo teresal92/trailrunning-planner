@@ -16,14 +16,7 @@ export default function PhaseOverviewCard({ phase }: PhaseOverviewCardProps) {
         marginBottom: 20,
       }}
     >
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "flex-start",
-          marginBottom: 10,
-        }}
-      >
+      <div>
         <div>
           <div
             style={{
@@ -35,25 +28,12 @@ export default function PhaseOverviewCard({ phase }: PhaseOverviewCardProps) {
           >
             {phase.name}
           </div>
-          <div style={{ fontSize: 12, color: "#666", fontStyle: "italic" }}>
-            {phase.subtitle}
-          </div>
+          <div>{phase.subtitle}</div>
         </div>
-        <div style={{ fontSize: 11, color: "#555", fontFamily: "monospace" }}>
-          {phase.weeks}w
-        </div>
+        <div>{phase.weeks}w</div>
       </div>
-      <p
-        style={{
-          fontSize: 13,
-          color: "#bbb",
-          margin: "0 0 12px",
-          lineHeight: 1.6,
-        }}
-      >
-        {phase.description}
-      </p>
-      <div style={{ display: "flex", flexWrap: "wrap", gap: 6 }}>
+      <p>{phase.description}</p>
+      <div>
         {phase.focus.map((f) => (
           <span
             key={f}

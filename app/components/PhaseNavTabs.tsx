@@ -7,17 +7,12 @@ interface PhaseNavTabsProps {
   onPhaseChange: (index: number) => void;
 }
 
-export default function PhaseNavTabs({ activePhase, onPhaseChange }: PhaseNavTabsProps) {
+export default function PhaseNavTabs({
+  activePhase,
+  onPhaseChange,
+}: PhaseNavTabsProps) {
   return (
-    <div
-      style={{
-        display: "flex",
-        overflowX: "auto",
-        borderBottom: "1px solid #1e1e1e",
-        background: "#0f0f0f",
-        padding: "0 16px",
-      }}
-    >
+    <div>
       {PHASES.map((p, i) => (
         <button
           key={p.id}
@@ -28,7 +23,9 @@ export default function PhaseNavTabs({ activePhase, onPhaseChange }: PhaseNavTab
             background: "none",
             border: "none",
             borderBottom:
-              activePhase === i ? `2px solid ${p.color}` : "2px solid transparent",
+              activePhase === i
+                ? `2px solid ${p.color}`
+                : "2px solid transparent",
             color: activePhase === i ? p.color : "#555",
             cursor: "pointer",
             fontSize: 12,

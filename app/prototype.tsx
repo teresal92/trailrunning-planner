@@ -21,14 +21,7 @@ export default function TrainingPlan() {
     STRENGTH_PROGRAMS[phase.strengthKey as keyof typeof STRENGTH_PROGRAMS];
 
   return (
-    <div
-      style={{
-        minHeight: "100vh",
-        background: "#0d0d0d",
-        color: "#e8e0d0",
-        fontFamily: "'Georgia', 'Times New Roman', serif",
-      }}
-    >
+    <div>
       <PlanHeader />
       <PhaseNavTabs
         activePhase={activePhase}

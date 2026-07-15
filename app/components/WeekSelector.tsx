@@ -16,13 +16,12 @@ export default function WeekSelector({
   phaseColor,
 }: WeekSelectorProps) {
   return (
-    <div style={{ display: "flex", gap: 8, marginBottom: 16, flexWrap: "wrap" }}>
+    <div>
       {weeks.map((w, i) => (
         <button
           key={i}
           onClick={() => onWeekChange(i)}
           style={{
-            padding: "6px 12px",
             background: activeWeek === i ? phaseColor : "#111",
             border: `1px solid ${activeWeek === i ? phaseColor : "#2a2a2a"}`,
             borderRadius: 4,
