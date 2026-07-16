@@ -43,6 +43,7 @@ export interface Phase {
 }
 
 export interface Exercise {
+  id: string;
   name: string;
   cue: string;
   detail: string;

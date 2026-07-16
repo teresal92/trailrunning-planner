@@ -10,42 +10,49 @@ export const STRENGTH_PROGRAMS: Record<string, StrengthProgram> = {
     sets_reps: "3×10–12 unless noted",
     exercises: [
       {
+        id: "eef0faac-31cf-4b86-8a79-056e1dbd45fc",
         name: "Weighted Step-Ups",
         detail:
           '3×10 each leg. Use an 18–24" box. Drive through the heel, stand tall at top. Add weight each week. Most direct exercise for uphill climbing power.',
         cue: "Push heel, not toe",
       },
       {
+        id: "1c8799c1-81aa-4910-99ac-a109aeb7e80a",
         name: "Glute Bridge / Hip Thrust",
         detail:
           "3×15. Bodyweight first two weeks, then add a dumbbell or barbell. Full hip extension at top, hold 1 second.",
         cue: "Squeeze hard at top",
       },
       {
+        id: "6143780d-d8bc-451d-b385-a6e03c262af7",
         name: "Bulgarian Split Squat",
         detail:
           "3×10 each leg. Rear foot elevated. Start bodyweight — these are humbling. Keep torso upright.",
         cue: "Front knee tracks toes",
       },
       {
+        id: "69e8733d-6799-4c17-b55e-25b6d248bb3a",
         name: "Single-Leg Romanian Deadlift",
         detail:
           "3×10 each leg. Light dumbbells. Hip hinge with soft knee. Builds posterior chain stability for uneven terrain.",
         cue: "Hip hinge, not squat",
       },
       {
+        id: "be512173-b648-402e-a82c-89cd6f7a130e",
         name: "Single-Leg Calf Raises",
         detail:
           "3×15 each leg. On a step for full range. Slow lowering. Altitude running is very calf-intensive.",
         cue: "Full range, slow down",
       },
       {
+        id: "6e57c45d-54f8-4048-bb12-c33eb02d19a0",
         name: "Dead Bug",
         detail:
           "3×8 each side. Opposite arm/leg lower slowly, lower back pressed to floor. Core stability for technical descents.",
         cue: "Spine stays on floor",
       },
       {
+        id: "8d5155db-d907-4b60-be43-cc07ed15c272",
         name: "Hip Flexor Stretch",
         detail:
           "2×60s each side. Kneeling lunge, posterior pelvic tilt. Non-negotiable — tight hip flexors kill glute activation.",
@@ -60,47 +67,55 @@ export const STRENGTH_PROGRAMS: Record<string, StrengthProgram> = {
     sets_reps: "3–4×8–10 unless noted",
     exercises: [
       {
+        id: "71a377a1-f89a-4cca-812e-58a5ace682cc",
         name: "Heavy Weighted Step-Ups",
         detail:
           "4×8 each leg. Heavy enough that reps 7–8 are a real challenge. Primary uphill power movement — directly mimics climbing mechanics.",
         cue: "Drive heel, stand tall",
       },
       {
+        id: "8951c100-5c67-4a23-b2b6-cfa9652fe2b4",
         name: "Barbell Hip Thrust",
         detail:
           "4×10. Load progressively each week. Barbell across hips, upper back on bench. Gold standard glute exercise.",
         cue: "Full extension, no arch",
       },
       {
+        id: "cb89c7b2-0c03-43dc-9b96-5c273b05783f",
         name: "Bulgarian Split Squat (loaded)",
         detail:
           "3×8 each leg. Add dumbbells. Slow 3-second eccentric. This strength shows up directly on steep grades.",
         cue: "Control the descent",
       },
       {
+        id: "e718c556-4b38-4675-8220-39e5b491c55b",
         name: "Box Jumps",
         detail:
           "3×6. Land softly through glutes and quads. Step down, don't jump down. Power development.",
         cue: "Land quiet, land low",
       },
       {
+        id: "1bca10a9-2c8d-4ea1-9243-3662959050cc",
         name: "Lateral Band Walks",
         detail:
           "3×15 each direction. Mini band above knees, half-squat position. Glute medius — critical for single-leg stability on descents.",
         cue: "Hips level, don't waddle",
       },
       {
+        id: "50146ce9-d644-495f-879b-eb7711f974ec",
         name: "Single-Leg RDL (loaded)",
         detail: "3×8 each. More weight than base phase. Slow and controlled.",
         cue: "Feel hamstring stretch",
       },
       {
+        id: "9f2f6fb1-8329-4f3e-8d43-b6d018a26f03",
         name: "Copenhagen Plank",
         detail:
           "3×20–30s each side. Side plank with top leg on bench. Adductor strength for knee health on long descents.",
         cue: "Hips square, no sag",
       },
       {
+        id: "b95fbfbf-e96f-467f-8d09-91a43755d6e0",
         name: "Calf Raises + Jump Rope",
         detail:
           "3×15 calf raises then 60s jump rope. Achilles and calf conditioning for rocky terrain at altitude.",
@@ -115,46 +130,54 @@ export const STRENGTH_PROGRAMS: Record<string, StrengthProgram> = {
     sets_reps: "3–4×6–8 heavy or power-focused",
     exercises: [
       {
+        id: "fd16be14-226e-4dbe-9b52-0d1faa28b95b",
         name: "Heavy Step-Ups with Knee Drive",
         detail:
           "4×6 each leg. Heaviest loads of the cycle. At the top, drive your knee up explosively — directly mimics the uphill running stride.",
         cue: "Explosive knee drive",
       },
       {
+        id: "7d06fd39-622e-482e-b14a-965154924d30",
         name: "Barbell Hip Thrust (heavy)",
         detail:
           "4×8. Near-maximum effort. Your glutes should be significantly stronger than May.",
         cue: "Powerful hip snap",
       },
       {
+        id: "44d319eb-0f4a-4a86-a830-926dd80ca585",
         name: "Single-Leg Squat to Box",
         detail:
           "3×6 each. Slowly lower to a box behind you, drive back up. Eccentric control — absorbs descent impact.",
         cue: "Don't collapse inward",
       },
       {
+        id: "d0233b7e-54b2-49fe-98a1-91deaad8989d",
         name: "Bounding / Running Skips",
         detail:
           "3×20m. Exaggerated running skips focusing on glute drive and knee lift. Trains fast-twitch power for uphills.",
         cue: "Drive knee, push ground",
       },
       {
+        id: "11177caa-4ab1-4a26-a46a-f2121624d2a2",
         name: "Reverse Lunge (loaded)",
         detail:
           "3×8 each. Step back, drive front heel to stand. More hip-dominant than forward lunge.",
         cue: "Front heel stays down",
       },
       {
+        id: "73c27e8c-a12e-4aa7-a644-2e51561f284b",
         name: "Lateral Band Walks (heavy band)",
         detail: "3×12 each direction. Progress band resistance.",
         cue: "Stay low, resist",
       },
       {
+        id: "49750fa6-139b-4235-9227-cb8ccfd7fec4",
         name: "Single-Leg Calf Raise (loaded)",
         detail: "3×12 each, holding a dumbbell. Pause 1s at top.",
         cue: "Full range, pause",
       },
       {
+        id: "b74acbdd-6d35-45de-a6de-86002e8d6a0b",
         name: "Glute Med Clamshells",
         detail:
           "2×20 each side. Band above knees. Finisher/activation. Don't rock the pelvis.",
@@ -169,33 +192,39 @@ export const STRENGTH_PROGRAMS: Record<string, StrengthProgram> = {
     sets_reps: "2×8 — activation only",
     exercises: [
       {
+        id: "8fc97629-d308-48a3-84b2-5b17edb08fa4",
         name: "Weighted Step-Ups",
         detail:
           "2×8 each leg. ~60% of peak load. Wake up the pattern, don't create soreness.",
         cue: "Sharp and crisp",
       },
       {
+        id: "96cadf1f-742c-4716-85e7-24570bc1c7e9",
         name: "Hip Thrust",
         detail:
           "2×10. Moderate load. Remind your glutes what they're there for.",
         cue: "Full extension",
       },
       {
+        id: "70bbe05d-8465-421e-aa29-c18b6e2b2eb7",
         name: "Lateral Band Walks",
         detail: "2×12 each direction. Light band. Pure activation.",
         cue: "Stay controlled",
       },
       {
+        id: "88336466-894a-4530-977e-f00fde96abf2",
         name: "Single-Leg RDL",
         detail: "2×8 each leg. Light dumbbells. Balance check-in.",
         cue: "Slow and grounded",
       },
       {
+        id: "967331b8-0f87-40b4-a1d9-8c1a01433121",
         name: "Single-Leg Calf Raises",
         detail: "2×12 each leg. No extra load.",
         cue: "Full range",
       },
       {
+        id: "726c55c7-6a59-4e71-93f6-34f93865b373",
         name: "Hip Flexor + Hamstring Stretch",
         detail: "2×60s each. Arrive at the start line loose, not tight.",
         cue: "Breathe into it",
