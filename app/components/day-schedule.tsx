@@ -15,7 +15,7 @@ export default function DaySchedule({ days }: DayScheduleProps) {
     <div>
       {days.map((d, i) => (
         <DayCard
-          key={i}
+          key={d.id}
           day={d}
           isSelected={selectedDay === i}
           onToggle={() => setSelectedDay(selectedDay === i ? null : i)}

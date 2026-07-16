@@ -19,7 +19,7 @@ export default function WeekSelector({
     <div>
       {weeks.map((w, i) => (
         <button
-          key={i}
+          key={w.id}
           onClick={() => onWeekChange(i)}
           style={{
             background: activeWeek === i ? phaseColor : "#111",

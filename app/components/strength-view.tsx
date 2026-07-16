@@ -55,8 +55,8 @@ export default function StrengthView({
         </div>
       </div>
       <div>
-        {strengthProgram.exercises.map((ex, i) => (
-          <ExerciseCard key={i} exercise={ex} phaseColor={phaseColor} />
+        {strengthProgram.exercises.map((ex) => (
+          <ExerciseCard key={ex.id} exercise={ex} phaseColor={phaseColor} />
         ))}
       </div>
     </div>

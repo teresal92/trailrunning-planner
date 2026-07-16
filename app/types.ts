@@ -15,6 +15,7 @@ export type DayType =
   | "race";
 
 export interface Day {
+  id: string;
   day: string;
   type: DayType;
   label: string;
@@ -22,6 +23,7 @@ export interface Day {
 }
 
 export interface WeekData {
+  id: string;
   week: number;
   dates: string;
   total_miles: string;
