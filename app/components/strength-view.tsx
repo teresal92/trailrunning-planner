@@ -1,5 +1,4 @@
 import ExerciseCard from "./exercise-card";
-import NutritionNote from "./nutrition-note";
 import type { StrengthProgram } from "../types";
 
 interface StrengthViewProps {
@@ -60,7 +59,6 @@ export default function StrengthView({
           <ExerciseCard key={i} exercise={ex} phaseColor={phaseColor} />
         ))}
       </div>
-      <NutritionNote />
     </div>
   );
 }

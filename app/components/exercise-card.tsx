@@ -15,9 +15,7 @@ export default function ExerciseCard({
         <div>{exercise.name}</div>
         <div
           style={{
-            fontSize: 10,
             color: phaseColor,
-            fontFamily: "monospace",
             background: `${phaseColor}15`,
           }}
         >

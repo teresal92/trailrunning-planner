@@ -28,9 +28,6 @@ export default function DayCard({ day, isSelected, onToggle }: DayCardProps) {
         background: isSelected ? colors.bg : "#111",
         border: `1px solid ${isSelected ? colors.dot + "44" : "#1e1e1e"}`,
         borderLeft: `3px solid ${isSelected ? colors.dot : "#1e1e1e"}`,
-        borderRadius: 5,
-        cursor: "pointer",
-        transition: "all 0.15s",
       }}
     >
       <div>

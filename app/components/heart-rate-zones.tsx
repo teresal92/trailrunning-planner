@@ -13,7 +13,7 @@ export default function HeartRateZones() {
       <div>
         {ZONES.map(([z, name, color, range]) => (
           <div key={z}>
-            <span style={{ color, fontWeight: 700, width: 20 }}>{z}</span>
+            <span style={{ color }}>{z}</span>
             <span>
               {name} · {range}
             </span>

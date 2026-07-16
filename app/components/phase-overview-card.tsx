@@ -20,10 +20,7 @@ export default function PhaseOverviewCard({ phase }: PhaseOverviewCardProps) {
         <div>
           <div
             style={{
-              fontSize: 16,
               color: phase.color,
-              fontWeight: 600,
-              marginBottom: 2,
             }}
           >
             {phase.name}

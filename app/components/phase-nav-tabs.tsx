@@ -18,21 +18,13 @@ export default function PhaseNavTabs({
           key={p.id}
           onClick={() => onPhaseChange(i)}
           style={{
-            flexShrink: 0,
-            padding: "14px 14px",
-            background: "none",
-            border: "none",
             borderBottom:
               activePhase === i
                 ? `2px solid ${p.color}`
                 : "2px solid transparent",
             color: activePhase === i ? p.color : "#555",
             cursor: "pointer",
-            fontSize: 12,
-            fontFamily: "'Georgia', serif",
             transition: "color 0.2s",
-            textAlign: "left",
-            marginBottom: -1,
           }}
         >
           <div style={{ fontWeight: 600, marginBottom: 2 }}>{p.name}</div>

@@ -15,26 +15,6 @@ export default function PlanHeader() {
           <div>
             <span>Weeks</span> 20
           </div>
-          <div>
-            <span>Yosemite</span> Aug 1–3
-          </div>
-        </div>
-        <div>
-          <div>
-            <span>Mon</span> Hard group 8–10mi
-          </div>
-          <div>
-            <span>Thu</span> Tempo
-          </div>
-          <div>
-            <span>Fri</span> Quality
-          </div>
-          <div>
-            <span>Sat</span> Long group run
-          </div>
-          <div>
-            <span>Sun</span> Rest
-          </div>
         </div>
       </div>
     </div>
