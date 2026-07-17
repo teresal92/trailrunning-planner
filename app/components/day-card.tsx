@@ -33,7 +33,6 @@ export default function DayCard({ day, isSelected, onToggle }: DayCardProps) {
       <div>
         <div>
           <div>{day.day}</div>
-          <div />
           <div>{day.label}</div>
         </div>
         <div>{isSelected ? "▲" : "▼"}</div>
