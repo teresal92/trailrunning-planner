@@ -1,5 +1,7 @@
 "use client";
 
+const VIEW_OPTIONS = ["Schedule", "Strength Program"] as const;
+
 interface ViewToggleProps {
   showStrength: boolean;
   onToggle: (value: boolean) => void;
@@ -13,7 +15,7 @@ export default function ViewToggle({
 }: ViewToggleProps) {
   return (
     <div>
-      {(["Schedule", "Strength Program"] as const).map((label, i) => {
+      {VIEW_OPTIONS.map((label, i) => {
         const isActive = showStrength === (i === 1);
         return (
           <button
