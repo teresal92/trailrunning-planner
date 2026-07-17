@@ -6,8 +6,8 @@ export const STRENGTH_PROGRAMS: Record<string, StrengthProgram> = {
   base: {
     name: "Base Strength",
     goal: "Rebuild movement patterns, activate glutes, establish baseline.",
-    sessions_per_week: 2,
-    sets_reps: "3×10–12 unless noted",
+    sessionsPerWeek: 2,
+    setsReps: "3×10–12 unless noted",
     exercises: [
       {
         id: "eef0faac-31cf-4b86-8a79-056e1dbd45fc",
@@ -63,8 +63,8 @@ export const STRENGTH_PROGRAMS: Record<string, StrengthProgram> = {
   build1: {
     name: "Build Strength I",
     goal: "Load the glutes progressively heavier. Add plyometric power for uphill drive.",
-    sessions_per_week: 2,
-    sets_reps: "3–4×8–10 unless noted",
+    sessionsPerWeek: 2,
+    setsReps: "3–4×8–10 unless noted",
     exercises: [
       {
         id: "71a377a1-f89a-4cca-812e-58a5ace682cc",
@@ -126,8 +126,8 @@ export const STRENGTH_PROGRAMS: Record<string, StrengthProgram> = {
   build2: {
     name: "Build Strength II",
     goal: "Peak power. Explosive glute drive. Race-specific uphill mechanics.",
-    sessions_per_week: 2,
-    sets_reps: "3–4×6–8 heavy or power-focused",
+    sessionsPerWeek: 2,
+    setsReps: "3–4×6–8 heavy or power-focused",
     exercises: [
       {
         id: "fd16be14-226e-4dbe-9b52-0d1faa28b95b",
@@ -188,8 +188,8 @@ export const STRENGTH_PROGRAMS: Record<string, StrengthProgram> = {
   taper: {
     name: "Taper Strength",
     goal: "Maintain neural activation. Zero new fatigue. Feel powerful and springy.",
-    sessions_per_week: 1,
-    sets_reps: "2×8 — activation only",
+    sessionsPerWeek: 1,
+    setsReps: "2×8 — activation only",
     exercises: [
       {
         id: "8fc97629-d308-48a3-84b2-5b17edb08fa4",
@@ -250,12 +250,12 @@ export const PHASES: Phase[] = [
       "Glute activation 2x/week",
       "Sleep & nutrition",
     ],
-    weeks_data: [
+    weeksData: [
       {
         id: "04b9a3bc-843b-4b5e-ac93-5dbfb0b822e6",
         week: 1,
         dates: "May 12–18",
-        total_miles: "28–32",
+        totalMiles: "28–32",
         vert: "2,500",
         days: [
           {
@@ -315,7 +315,7 @@ export const PHASES: Phase[] = [
         id: "6076341d-236d-4fad-b698-36ec53ef3b7e",
         week: 2,
         dates: "May 19–25",
-        total_miles: "32–36",
+        totalMiles: "32–36",
         vert: "3,500",
         days: [
           {
@@ -376,7 +376,7 @@ export const PHASES: Phase[] = [
         id: "4babe245-81d2-4588-96fc-5fbbae06ed45",
         week: 3,
         dates: "May 26–Jun 1",
-        total_miles: "26–28",
+        totalMiles: "26–28",
         vert: "2,000",
         days: [
           {
@@ -450,12 +450,12 @@ export const PHASES: Phase[] = [
       "Sat long group run",
       "Heavy glute loading",
     ],
-    weeks_data: [
+    weeksData: [
       {
         id: "b978a0a7-4365-49b7-bbdc-85d50768ba3d",
         week: 4,
         dates: "Jun 2–8",
-        total_miles: "38–42",
+        totalMiles: "38–42",
         vert: "5,000",
         days: [
           {
@@ -519,7 +519,7 @@ export const PHASES: Phase[] = [
         id: "0b12f47c-5b35-41cb-aba7-a5e03941a017",
         week: 5,
         dates: "Jun 9–15",
-        total_miles: "40–44",
+        totalMiles: "40–44",
         vert: "5,500",
         days: [
           {
@@ -583,7 +583,7 @@ export const PHASES: Phase[] = [
         id: "dddf8f62-76f9-4cb7-8b9a-6e183dae2ca3",
         week: 6,
         dates: "Jun 16–22",
-        total_miles: "42–46",
+        totalMiles: "42–46",
         vert: "6,000",
         days: [
           {
@@ -646,7 +646,7 @@ export const PHASES: Phase[] = [
         id: "3fd7c4b2-9d8b-4cad-916c-149a81967f2b",
         week: 7,
         dates: "Jun 23–29",
-        total_miles: "28–32",
+        totalMiles: "28–32",
         vert: "3,000",
         days: [
           {
@@ -706,7 +706,7 @@ export const PHASES: Phase[] = [
         id: "53c7fd3f-4c89-4de5-a7ad-e028d7128a77",
         week: 8,
         dates: "Jun 30–Jul 6",
-        total_miles: "40–44",
+        totalMiles: "40–44",
         vert: "5,500",
         days: [
           {
@@ -782,12 +782,12 @@ export const PHASES: Phase[] = [
       "🏔 Yosemite Aug 1–3",
       "Peak vert + explosive strength",
     ],
-    weeks_data: [
+    weeksData: [
       {
         id: "1ee1035d-ae3e-47c2-8ed1-55335fb5c706",
         week: 9,
         dates: "Jul 7–13",
-        total_miles: "44–48",
+        totalMiles: "44–48",
         vert: "7,000",
         days: [
           {
@@ -850,7 +850,7 @@ export const PHASES: Phase[] = [
         id: "142097c2-f14c-45ce-9021-42fc2fac7f57",
         week: 10,
         dates: "Jul 14–20",
-        total_miles: "46–50",
+        totalMiles: "46–50",
         vert: "8,000",
         days: [
           {
@@ -913,7 +913,7 @@ export const PHASES: Phase[] = [
         id: "e1e991a9-9232-4383-b121-2ede1984c8b4",
         week: 11,
         dates: "Jul 21–27",
-        total_miles: "32–36",
+        totalMiles: "32–36",
         vert: "3,500",
         days: [
           {
@@ -976,7 +976,7 @@ export const PHASES: Phase[] = [
         id: "289b33bd-73df-49eb-a45d-15ac826f7ecc",
         week: 12,
         dates: "Jul 28 – Aug 3",
-        total_miles: "Yosemite + float",
+        totalMiles: "Yosemite + float",
         vert: "Yosemite vert",
         days: [
           {
@@ -1040,7 +1040,7 @@ export const PHASES: Phase[] = [
         id: "7aff87e4-f587-4d46-a9e5-1e4cfab18b5c",
         week: 13,
         dates: "Aug 4–10",
-        total_miles: "28–32",
+        totalMiles: "28–32",
         vert: "2,500",
         days: [
           {
@@ -1102,7 +1102,7 @@ export const PHASES: Phase[] = [
         id: "945babde-cce6-4732-b3be-b06da0c94053",
         week: 14,
         dates: "Aug 11–17",
-        total_miles: "46–50",
+        totalMiles: "46–50",
         vert: "8,000",
         days: [
           {
@@ -1165,7 +1165,7 @@ export const PHASES: Phase[] = [
         id: "71d18f56-b810-4e18-9fd0-7dd08a887599",
         week: 15,
         dates: "Aug 18–24",
-        total_miles: "28–32",
+        totalMiles: "28–32",
         vert: "3,000",
         days: [
           {
@@ -1240,12 +1240,12 @@ export const PHASES: Phase[] = [
       "Strength 1x activation",
       "Carb-load 3 days out",
     ],
-    weeks_data: [
+    weeksData: [
       {
         id: "94b513f8-9bae-49fd-b5a1-03c3ef5cb059",
         week: 16,
         dates: "Aug 25–31",
-        total_miles: "32–36",
+        totalMiles: "32–36",
         vert: "4,000",
         days: [
           {
@@ -1307,7 +1307,7 @@ export const PHASES: Phase[] = [
         id: "481790be-921f-49d4-a4de-344f8cb7aab3",
         week: 17,
         dates: "Sep 1–7",
-        total_miles: "26–30",
+        totalMiles: "26–30",
         vert: "3,000",
         days: [
           {
@@ -1367,7 +1367,7 @@ export const PHASES: Phase[] = [
         id: "4c6bf4e3-02c0-4ea2-8244-ca3cde6978ef",
         week: 18,
         dates: "Sep 8–14",
-        total_miles: "20–24",
+        totalMiles: "20–24",
         vert: "1,800",
         days: [
           {
@@ -1427,7 +1427,7 @@ export const PHASES: Phase[] = [
         id: "b3bc8e47-156f-426a-b06a-0f8e4746f83e",
         week: 19,
         dates: "Sep 15–21",
-        total_miles: "14–18",
+        totalMiles: "14–18",
         vert: "800",
         days: [
           {
@@ -1488,7 +1488,7 @@ export const PHASES: Phase[] = [
         id: "8a1ddbe7-0725-4d34-8643-6ca34fa8d8d9",
         week: 20,
         dates: "Sep 22–27",
-        total_miles: "8–10 + Race",
+        totalMiles: "8–10 + Race",
         vert: "400 + race",
         days: [
           {

@@ -45,12 +45,12 @@ export default function StrengthView({
         <div>
           <div>
             <span style={{ color: phaseColor }}>
-              {strengthProgram.sessions_per_week}×
+              {strengthProgram.sessionsPerWeek}×
             </span>
             /week
           </div>
           <div>
-            <span>Default:</span> {strengthProgram.sets_reps}
+            <span>Default:</span> {strengthProgram.setsReps}
           </div>
         </div>
       </div>

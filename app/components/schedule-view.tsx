@@ -22,7 +22,7 @@ export default function ScheduleView({
     <>
       <PhaseOverviewCard phase={phase} />
       <WeekSelector
-        weeks={phase.weeks_data}
+        weeks={phase.weeksData}
         activeWeek={activeWeek}
         onWeekChange={onWeekChange}
         phaseColor={phase.color}

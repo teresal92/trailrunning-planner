@@ -13,7 +13,7 @@ export default function WeekStatsHeader({ week }: WeekStatsHeaderProps) {
       </div>
       <div>
         <div>
-          <span>{week.total_miles}</span> mi
+          <span>{week.totalMiles}</span> mi
         </div>
         <div>
           <span>{week.vert}</span> ft vert

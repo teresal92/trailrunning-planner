@@ -15,7 +15,7 @@ export default function TrainingPlan() {
   const [showStrength, setShowStrength] = useState(false);
 
   const phase = PHASES[activePhase];
-  const week = phase.weeks_data[activeWeek];
+  const week = phase.weeksData[activeWeek];
   const strengthProgram =
     STRENGTH_PROGRAMS[phase.strengthKey as keyof typeof STRENGTH_PROGRAMS];
 
