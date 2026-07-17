@@ -2,7 +2,7 @@
 
 A trail running planner to help you achieve your next PR goals
 
-![App screenshot](docs/prototype-screenshot.png)
+![App screenshot](docs/prototype-screenshot-dark.png)
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
