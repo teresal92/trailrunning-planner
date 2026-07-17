@@ -15,6 +15,7 @@ export type DayType =
   | "race";
 
 export interface Day {
+  id: string;
   day: string;
   type: DayType;
   label: string;
@@ -22,9 +23,10 @@ export interface Day {
 }
 
 export interface WeekData {
+  id: string;
   week: number;
   dates: string;
-  total_miles: string;
+  totalMiles: string;
   vert: string;
   days: Day[];
 }
@@ -39,10 +41,11 @@ export interface Phase {
   strengthKey: string;
   description: string;
   focus: string[];
-  weeks_data: WeekData[];
+  weeksData: WeekData[];
 }
 
 export interface Exercise {
+  id: string;
   name: string;
   cue: string;
   detail: string;
@@ -51,7 +54,7 @@ export interface Exercise {
 export interface StrengthProgram {
   name: string;
   goal: string;
-  sessions_per_week: number;
-  sets_reps: string;
+  sessionsPerWeek: number;
+  setsReps: string;
   exercises: Exercise[];
 }
