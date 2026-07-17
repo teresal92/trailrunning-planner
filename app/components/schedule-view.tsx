@@ -28,7 +28,7 @@ export default function ScheduleView({
         phaseColor={phase.color}
       />
       <WeekStatsHeader week={week} />
-      <DaySchedule key={`${phase.id}-${activeWeek}`} days={week.days} />
+      <DaySchedule days={week.days} />
       <HeartRateZones />
     </>
   );
