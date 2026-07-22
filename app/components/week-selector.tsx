@@ -13,28 +13,21 @@ export default function WeekSelector({
   weeks,
   activeWeek,
   onWeekChange,
-  phaseColor,
 }: WeekSelectorProps) {
   return (
-    <div>
-      {weeks.map((w, i) => (
-        <button
-          key={w.id}
-          onClick={() => onWeekChange(i)}
-          style={{
-            background: activeWeek === i ? phaseColor : "#111",
-            border: `1px solid ${activeWeek === i ? phaseColor : "#2a2a2a"}`,
-            borderRadius: 4,
-            color: activeWeek === i ? "#000" : "#888",
-            cursor: "pointer",
-            fontSize: 11,
-            fontFamily: "monospace",
-            transition: "all 0.15s",
-          }}
-        >
-          Wk {w.week}
-        </button>
-      ))}
+    <div className="flex gap-2 py-4">
+      {weeks.map((w, i) => {
+        const isSelected = activeWeek === i;
+        return (
+          <button
+            key={w.id}
+            onClick={() => onWeekChange(i)}
+            className={`rounded-lg px-4 py-2 font-semibold ${isSelected ? "bg-accent-soft text-accent-soft-text" : "bg-surface text-text-secondary"}`}
+          >
+            Wk {w.week}
+          </button>
+        );
+      })}
     </div>
   );
 }
