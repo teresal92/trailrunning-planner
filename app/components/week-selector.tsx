@@ -6,7 +6,6 @@ interface WeekSelectorProps {
   weeks: WeekData[];
   activeWeek: number;
   onWeekChange: (index: number) => void;
-  phaseColor: string;
 }
 
 export default function WeekSelector({
