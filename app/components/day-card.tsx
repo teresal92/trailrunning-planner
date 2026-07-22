@@ -1,6 +1,5 @@
 "use client";
 
-import { DAY_COLORS } from "../constants";
 import type { Day } from "../types";
 
 interface DayCardProps {
@@ -10,8 +9,6 @@ interface DayCardProps {
 }
 
 export default function DayCard({ day, isSelected, onToggle }: DayCardProps) {
-  const colors = DAY_COLORS[day.type];
-
   return (
     <div
       role="button"
@@ -23,11 +20,6 @@ export default function DayCard({ day, isSelected, onToggle }: DayCardProps) {
           e.preventDefault();
           onToggle();
         }
-      }}
-      style={{
-        background: isSelected ? colors.bg : "#111",
-        border: `1px solid ${isSelected ? colors.dot + "44" : "#1e1e1e"}`,
-        borderLeft: `3px solid ${isSelected ? colors.dot : "#1e1e1e"}`,
       }}
     >
       <div>
