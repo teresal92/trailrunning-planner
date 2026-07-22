@@ -2,9 +2,6 @@
 export default function PlanHeader() {
   return (
     <div className="flex flex-col gap-4 mb-6">
-      <div className="font-mono text-text-secondary text-sm tracking-wide">
-        Teresa Lew
-      </div>
       <div className="flex flex-col">
         <h1 className="text-xl font-bold">Mammoth Trailfest 26K</h1>
         <div className="text-text-secondary">May – September 2026</div>

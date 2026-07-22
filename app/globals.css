@@ -27,7 +27,7 @@
   --color-text-secondary: oklch(54.1% 0.0119 261.8);
   --color-text-tertiary: oklch(69.3% 0.0104 273.3);
 
-  /* accent (violet, Linear-derived) */
+  /* accent (violet) */
   --color-accent: oklch(56.7% 0.1585 275.2);
   --color-accent-soft: oklch(95.3% 0.0229 280.6);
   --color-accent-soft-text: oklch(44% 0.1595 275.1);
