@@ -6,17 +6,18 @@ interface WeekStatsHeaderProps {
 
 export default function WeekStatsHeader({ week }: WeekStatsHeaderProps) {
   return (
-    <div>
+    <div className="flex justify-between mb-6">
       <div>
-        <div>Week {week.week}</div>
-        <div>{week.dates}</div>
+        <div className="text-xl font-bold ">Week {week.week}</div>
+        <div className="text-text-secondary">{week.dates}</div>
       </div>
-      <div>
+
+      <div className="flex gap-4 font-mono text-text-secondary">
         <div>
-          <span>{week.totalMiles}</span> mi
+          <span className="font-bold text-white">{week.totalMiles}</span> mi
         </div>
         <div>
-          <span>{week.vert}</span> ft vert
+          <span className="font-bold text-amber-400">{week.vert}</span> ft
         </div>
       </div>
     </div>
