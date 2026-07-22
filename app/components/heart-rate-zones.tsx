@@ -38,14 +38,17 @@ const ZONES = [
 
 export default function HeartRateZones() {
   return (
-    <div>
-      <div>Heart Rate Zones</div>
+    <div className="px-6 py-8 border-2 border-border rounded-lg">
+      <h2 className="text-text-secondary">Heart Rate Zones</h2>
       <div>
         {ZONES.map((z) => (
-          <div key={z.id}>
-            <span style={{ color: z.color }}>{z.zone}</span>
-            <span>
-              {z.name} · {z.range}
+          <div key={z.id} className="grid grid-cols-3 text-start">
+            <span style={{ color: z.color }} className="font-bold font-mono">
+              {z.zone}
+            </span>
+            <span>{z.name}</span>
+            <span className="text-text-secondary font-mono text-sm">
+              {z.range}
             </span>
           </div>
         ))}

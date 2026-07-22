@@ -5,7 +5,7 @@
  * defaults; dark overrides the same custom properties under
  * prefers-color-scheme (Tailwind v4's default dark mode strategy).
  * Colors are OKLCH for perceptually-uniform lightness steps between
- * light/dark pairs. Source: design-tokens/tokens.css
+ * light/dark pairs.
  */
 
 @theme inline {
@@ -51,6 +51,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
+    --radius: 0.625rem;
     --color-bg: oklch(16% 0.0042 285.9);
     --color-surface: oklch(18.8% 0.006 285.8);
     --color-surface-alt: oklch(20.6% 0.0059 285.9);
