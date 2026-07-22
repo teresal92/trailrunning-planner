@@ -31,11 +31,7 @@ export default function TrainingPlan() {
         }}
       />
       <div>
-        <ViewToggle
-          showStrength={showStrength}
-          onToggle={setShowStrength}
-          phaseColor={phase.color}
-        />
+        <ViewToggle showStrength={showStrength} onToggle={setShowStrength} />
         {!showStrength ? (
           <ScheduleView
             phase={phase}
@@ -44,10 +40,7 @@ export default function TrainingPlan() {
             onWeekChange={(i) => setActiveWeek(i)}
           />
         ) : (
-          <StrengthView
-            strengthProgram={strengthProgram}
-            phaseColor={phase.color}
-          />
+          <StrengthView strengthProgram={strengthProgram} />
         )}
       </div>
     </div>
