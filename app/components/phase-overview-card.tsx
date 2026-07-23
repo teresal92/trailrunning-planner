@@ -6,45 +6,22 @@ interface PhaseOverviewCardProps {
 
 export default function PhaseOverviewCard({ phase }: PhaseOverviewCardProps) {
   return (
-    <div
-      style={{
-        background: "#111",
-        border: `1px solid ${phase.color}22`,
-        borderLeft: `3px solid ${phase.color}`,
-        borderRadius: 6,
-        padding: "16px 18px",
-        marginBottom: 20,
-      }}
-    >
-      <div>
+    <div className="bg-surface border border-border rounded-lg p-6 mb-4">
+      <div className="flex justify-between mb-4">
         <div>
-          <div
-            style={{
-              color: phase.color,
-            }}
-          >
-            {phase.name}
-          </div>
-          <div>{phase.subtitle}</div>
+          <div className="text-lg font-bold">{phase.name}</div>
+          <div className="text-text-secondary">{phase.subtitle}</div>
         </div>
-        <div>{phase.weeks}w</div>
+        <div className="text-text-secondary font-mono">{phase.weeks}w</div>
       </div>
-      <p>{phase.description}</p>
-      <div>
-        {phase.focus.map((f) => (
+      <p className="text-text-secondary mb-4">{phase.description}</p>
+      <div className="flex flex-wrap gap-2">
+        {phase.focus.map((focus) => (
           <span
-            key={f}
-            style={{
-              fontSize: 11,
-              color: phase.color,
-              background: `${phase.color}11`,
-              border: `1px solid ${phase.color}33`,
-              borderRadius: 3,
-              padding: "3px 8px",
-              fontFamily: "monospace",
-            }}
+            className="text-sm rounded-lg border-border border bg-surface-sunken text-text-secondary px-2 py-1"
+            key={focus}
           >
-            {f}
+            {focus}
           </span>
         ))}
       </div>

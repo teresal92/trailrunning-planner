@@ -12,7 +12,7 @@ export default function DaySchedule({ days }: DayScheduleProps) {
   const [selectedDay, setSelectedDay] = useState<number | null>(null);
 
   return (
-    <div>
+    <div className="flex flex-col mb-6">
       {days.map((d, i) => (
         <DayCard
           key={d.id}

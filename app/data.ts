@@ -240,7 +240,6 @@ export const PHASES: Phase[] = [
     subtitle: "Foundation & Recovery",
     dates: "May 12 – Jun 1",
     weeks: 3,
-    color: "#7eb8a0",
     strengthKey: "base",
     description:
       "Rebuild after MUC 50K. Low intensity, high aerobic volume. Strength focus on glute activation and movement quality.",
@@ -439,7 +438,6 @@ export const PHASES: Phase[] = [
     subtitle: "Vert & Threshold",
     dates: "Jun 2 – Jul 6",
     weeks: 5,
-    color: "#c4a35a",
     strengthKey: "build1",
     description:
       "Weekly structure locked in: hard group run Mon, tempo Thu, quality Fri, long group run Sat, recovery Sun. Strength on Tue + Wed. Fuel every long run.",
@@ -772,7 +770,6 @@ export const PHASES: Phase[] = [
     subtitle: "Race-Specific & Peak",
     dates: "Jul 7 – Aug 17",
     weeks: 7,
-    color: "#d4705a",
     strengthKey: "build2",
     description:
       "Same weekly skeleton — Mon hard group, Thu tempo, Fri quality, Sat long. Yosemite Aug 1–3 replaces Wks 11–12. Strength goes explosive. Two peak long runs bookend the block.",
@@ -1230,7 +1227,6 @@ export const PHASES: Phase[] = [
     subtitle: "Sharpen & Rest",
     dates: "Aug 25 – Sep 27",
     weeks: 5,
-    color: "#8b9eb5",
     strengthKey: "taper",
     description:
       "Same skeleton but volume drops hard. Mon group run stays but effort moderates. Strength drops to 1x activation session. Arrive hungry and powerful.",

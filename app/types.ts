@@ -37,7 +37,6 @@ export interface Phase {
   subtitle: string;
   dates: string;
   weeks: number;
-  color: string;
   strengthKey: string;
   description: string;
   focus: string[];

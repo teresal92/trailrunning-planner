@@ -25,7 +25,6 @@ export default function ScheduleView({
         weeks={phase.weeksData}
         activeWeek={activeWeek}
         onWeekChange={onWeekChange}
-        phaseColor={phase.color}
       />
       <WeekStatsHeader week={week} />
       <DaySchedule days={week.days} />

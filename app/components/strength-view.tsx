@@ -3,60 +3,30 @@ import type { StrengthProgram } from "../types";
 
 interface StrengthViewProps {
   strengthProgram: StrengthProgram;
-  phaseColor: string;
 }
 
-export default function StrengthView({
-  strengthProgram,
-  phaseColor,
-}: StrengthViewProps) {
+export default function StrengthView({ strengthProgram }: StrengthViewProps) {
   return (
     <div>
-      <div
-        style={{
-          background: "#111",
-          border: `1px solid ${phaseColor}22`,
-          borderLeft: `3px solid ${phaseColor}`,
-          borderRadius: 6,
-          padding: "16px 18px",
-          marginBottom: 20,
-        }}
-      >
-        <div
-          style={{
-            fontSize: 16,
-            color: phaseColor,
-            fontWeight: 600,
-            marginBottom: 4,
-          }}
-        >
-          {strengthProgram.name}
-        </div>
-        <div
-          style={{
-            fontSize: 13,
-            color: "#bbb",
-            marginBottom: 12,
-            lineHeight: 1.6,
-          }}
-        >
-          {strengthProgram.goal}
-        </div>
-        <div>
+      <div className="bg-surface border border-border rounded-lg p-6 mb-4">
+        <div className="text-lg font-bold">{strengthProgram.name}</div>
+        <div className="text-text-secondary mb-4">{strengthProgram.goal}</div>
+        <div className="flex gap-4 font-mono text-sm text-text-secondary">
           <div>
-            <span style={{ color: phaseColor }}>
+            <span className="font-bold text-text-primary">
               {strengthProgram.sessionsPerWeek}×
-            </span>
+            </span>{" "}
             /week
           </div>
           <div>
-            <span>Default:</span> {strengthProgram.setsReps}
+            <span className="font-semibold">Default:</span>{" "}
+            {strengthProgram.setsReps}
           </div>
         </div>
       </div>
-      <div>
+      <div className="flex flex-col gap-3">
         {strengthProgram.exercises.map((ex) => (
-          <ExerciseCard key={ex.id} exercise={ex} phaseColor={phaseColor} />
+          <ExerciseCard key={ex.id} exercise={ex} />
         ))}
       </div>
     </div>

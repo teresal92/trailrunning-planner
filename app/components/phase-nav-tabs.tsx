@@ -12,33 +12,19 @@ export default function PhaseNavTabs({
   onPhaseChange,
 }: PhaseNavTabsProps) {
   return (
-    <div>
-      {PHASES.map((p, i) => (
-        <button
-          key={p.id}
-          onClick={() => onPhaseChange(i)}
-          style={{
-            borderBottom:
-              activePhase === i
-                ? `2px solid ${p.color}`
-                : "2px solid transparent",
-            color: activePhase === i ? p.color : "#555",
-            cursor: "pointer",
-            transition: "color 0.2s",
-          }}
-        >
-          <div style={{ fontWeight: 600, marginBottom: 2 }}>{p.name}</div>
-          <div
-            style={{
-              fontSize: 10,
-              color: activePhase === i ? "#888" : "#444",
-              fontFamily: "monospace",
-            }}
+    <div className="flex gap-4 mb-4">
+      {PHASES.map((p, i) => {
+        const isActive = activePhase === i;
+        return (
+          <button
+            key={p.id}
+            onClick={() => onPhaseChange(i)}
+            className={`font-semibold cursor-pointer transition-colors border-b-2 py-2 ${isActive ? "border-accent text-text-primary" : "border-transparent text-text-secondary"}`}
           >
-            {p.dates}
-          </div>
-        </button>
-      ))}
+            <div>{p.name}</div>
+          </button>
+        );
+      })}
     </div>
   );
 }

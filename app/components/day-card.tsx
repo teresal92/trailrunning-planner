@@ -1,6 +1,5 @@
 "use client";
 
-import { DAY_COLORS } from "../constants";
 import type { Day } from "../types";
 
 interface DayCardProps {
@@ -10,8 +9,6 @@ interface DayCardProps {
 }
 
 export default function DayCard({ day, isSelected, onToggle }: DayCardProps) {
-  const colors = DAY_COLORS[day.type];
-
   return (
     <div
       role="button"
@@ -24,20 +21,22 @@ export default function DayCard({ day, isSelected, onToggle }: DayCardProps) {
           onToggle();
         }
       }}
-      style={{
-        background: isSelected ? colors.bg : "#111",
-        border: `1px solid ${isSelected ? colors.dot + "44" : "#1e1e1e"}`,
-        borderLeft: `3px solid ${isSelected ? colors.dot : "#1e1e1e"}`,
-      }}
+      className="px-3 py-4 border-b border-border cursor-pointer transition-all"
     >
-      <div>
-        <div>
-          <div>{day.day}</div>
+      <div className="flex justify-between items-center">
+        <div className="flex items-center gap-8">
+          <div className="font-mono text-text-secondary text-sm">{day.day}</div>
           <div>{day.label}</div>
         </div>
-        <div>{isSelected ? "▲" : "▼"}</div>
+        <div className="text-text-secondary text-xs">
+          {isSelected ? "▲" : "▼"}
+        </div>
       </div>
-      {isSelected && <div>{day.detail}</div>}
+      {isSelected && (
+        <div className="mt-2.5 pt-2.5 text-sm text-text-secondary pl-14">
+          {day.detail}
+        </div>
+      )}
     </div>
   );
 }
