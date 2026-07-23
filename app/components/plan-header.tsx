@@ -3,7 +3,7 @@ export default function PlanHeader() {
   return (
     <div className="flex flex-col gap-4 mb-6">
       <div className="flex flex-col">
-        <h1 className="text-xl font-bold">Mammoth Trailfest 26K</h1>
+        <h1 className="text-2xl font-bold">Mammoth Trailfest 26K</h1>
         <div className="text-text-secondary">May – September 2026</div>
       </div>
       <div className="flex gap-3">

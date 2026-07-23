@@ -9,7 +9,7 @@ export default function PhaseOverviewCard({ phase }: PhaseOverviewCardProps) {
     <div className="bg-surface border border-border rounded-lg p-6 mb-4">
       <div className="flex justify-between mb-4">
         <div>
-          <div className="font-white text-2xl font-bold">{phase.name}</div>
+          <div className="font-white text-lg font-bold">{phase.name}</div>
           <div className="text-text-secondary">{phase.subtitle}</div>
         </div>
         <div className="text-text-secondary font-mono">{phase.weeks}w</div>
