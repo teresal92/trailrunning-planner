@@ -19,7 +19,7 @@ export default function PhaseNavTabs({
           <button
             key={p.id}
             onClick={() => onPhaseChange(i)}
-            className={`font-semibold cursor-pointer transition-colors border-b-2 py-2 ${isActive ? "border-accent text-white" : "border-transparent text-text-secondary"}`}
+            className={`font-semibold cursor-pointer transition-colors border-b-2 py-2 ${isActive ? "border-accent text-text-primary" : "border-transparent text-text-secondary"}`}
           >
             <div>{p.name}</div>
           </button>

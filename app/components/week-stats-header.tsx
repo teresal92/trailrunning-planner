@@ -14,7 +14,8 @@ export default function WeekStatsHeader({ week }: WeekStatsHeaderProps) {
 
       <div className="flex gap-4 font-mono text-text-secondary">
         <div>
-          <span className="font-bold text-white">{week.totalMiles}</span> mi
+          <span className="font-bold text-text-primary">{week.totalMiles}</span>{" "}
+          mi
         </div>
         <div>
           <span className="font-bold text-accent-soft-text">{week.vert}</span>{" "}
