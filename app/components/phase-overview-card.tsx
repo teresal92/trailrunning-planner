@@ -18,7 +18,7 @@ export default function PhaseOverviewCard({ phase }: PhaseOverviewCardProps) {
       <div className="flex flex-wrap gap-2">
         {phase.focus.map((focus) => (
           <span
-            className="text-sm rounded-lg border-border border bg-surface-sunken text-text-secondary px-4 py-2"
+            className="text-sm rounded-lg border-border border bg-surface-sunken text-text-secondary px-2 py-1"
             key={focus}
           >
             {focus}
