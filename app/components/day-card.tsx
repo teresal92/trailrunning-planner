@@ -21,15 +21,22 @@ export default function DayCard({ day, isSelected, onToggle }: DayCardProps) {
           onToggle();
         }
       }}
+      className="px-3 py-4 border-b border-border cursor-pointer transition-all"
     >
-      <div>
-        <div>
-          <div>{day.day}</div>
+      <div className="flex justify-between items-center">
+        <div className="flex items-center gap-8">
+          <div className="font-mono text-text-secondary text-sm">{day.day}</div>
           <div>{day.label}</div>
         </div>
-        <div>{isSelected ? "▲" : "▼"}</div>
+        <div className="text-text-secondary text-xs">
+          {isSelected ? "▲" : "▼"}
+        </div>
       </div>
-      {isSelected && <div>{day.detail}</div>}
+      {isSelected && (
+        <div className="mt-2.5 pt-2.5 text-sm text-text-secondary pl-14">
+          {day.detail}
+        </div>
+      )}
     </div>
   );
 }
